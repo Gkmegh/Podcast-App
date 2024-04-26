@@ -26,13 +26,15 @@ function Profile() {
     }
 
   return (
-    <div>
+   <>
       <Header/>
-      <h1>{user.name}</h1>
-      <h1>{user.email}</h1>
-      <h1>{user.uid}</h1>
-      <Button text={"Logout"} onClick={handleLogout} />
-    </div>
+      <div className='input-wrapper'>
+      <h1>Name: {user.name}</h1>
+      <h1>Email: {user.email}</h1>
+      <h1>UID: {user.uid}</h1>
+      <Button text={"Logout"} onClick={handleLogout}  style={{width:"200px", margin:0 }}/>
+      </div>
+    </>
   )
 }
 
